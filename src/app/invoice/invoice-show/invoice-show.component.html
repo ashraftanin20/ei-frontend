@@ -1,0 +1,24 @@
+<div class="invoice-container">
+    <div class="invoice-title">
+          <h5 class="card-title">Master Firma</h5>
+          <p class="card-text">Top E-Device supplier in Germany</p>
+    </div>    
+
+    <div class="billing-address">
+          <h4 class="card-title">Billing Adress</h4>
+          <p class="card-text">{{invoice?.address}}</p>
+    </div>
+    <div class="invoice-details">
+          <h4 class="card-title">Billing Details</h4>
+          <br>
+          <h5>{{invoice?.item}}</h5>
+          <p class="card-text">{{invoice?.description}}</p>
+          <p>Order Date: {{invoice?.orderedDate}}</p>
+          <p>Delivered Date: {{invoice?.deliveredDate}}</p>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="#" class="btn btn-primary" (click)="printInvoice()">Print Invoice</a>
+      <a routerLink="/invoices" class="btn btn-secondary m-2">Invoice List</a>
+    </div>
+</div> 
+

@@ -1,0 +1,38 @@
+<div class="container invoice-format">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Order Date</th>
+        <th scope="col" class="no-print">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let invoice of invoices | slice: (page -1) * pageSize:(page -1) * pageSize + pageSize; let i=index">
+        <th scope="row">{{i}}</th>
+        <td>{{invoice.item}}</td>
+        <td>{{invoice.qty}}</td>
+        <td>{{invoice.orderedDate | date: 'shortDate'}}</td>
+        <td>
+          <a class="btn btn-primary mx-1" [routerLink]="['/invoices/show', invoice.id]"><i class="bi bi-ticket-detailed"></i></a>
+          <a class="btn btn-secondary" (click)="removeInvoice(invoice.id)"><i class="bi bi-trash"></i></a>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+<br/> 
+<ngb-pagination class="no-print"
+  [collectionSize]="invoices.length * 2"  
+  [(page)]="page"
+  [rotate]="true"
+  [ellipses]="false"  
+  [boundaryLinks]="false"
+  > 
+</ngb-pagination>
+<a routerLink="/invoices/add" class="btn btn-primary">Add Invoice</a>
+<a class="btn btn-secondary mx-1" (click)="printList()">Print</a>
+</div>

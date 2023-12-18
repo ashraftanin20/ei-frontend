@@ -1,0 +1,69 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Admin User",
+      "password": "Admin@123",
+      "email": "admin@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    }
+  ],
+  "invoices": [
+    {
+      "id": 6,
+      "item": "iPhone 14 ",
+      "price": 1299,
+      "qty": 10,
+      "description": "iPhone 14 mini with 2GM RAM and 16MP camera",
+      "address": "Leipziger street 120, 08060, Zwickau, Germany",
+      "ordered_date": "20.10.2023"
+    },
+    {
+      "id": 7,
+      "item": "HP Printer",
+      "price": 249,
+      "qty": 10,
+      "description": "HP Printers ordered by our client Test Firma.",
+      "address": "Ernst-Grube-Street 24, 08062, Zwickau, Germany",
+      "ordered_date": "10.10.2023"
+    },
+    {
+      "id": 8,
+      "item": "iPad Mini",
+      "description": "iPad Mini model XXX",
+      "price": 200,
+      "qty": 20,
+      "address": "Leipziger Street 30, 08060, Zwickau, Germany",
+      "ordered_date": "19/11/2023"
+    },
+    {
+      "id": 9,
+      "item": "Samsung Tab",
+      "description": "Samsung tab 450 x 850",
+      "price": 299,
+      "qty": 12,
+      "address": "Leipziger Street 30, 08060, Zwickau, Germany",
+      "ordered_date": "19/11/2023"
+    },
+    {
+      "id": 10,
+      "item": "Dell PC",
+      "description": "Dell PC with 8GB RAM and 500GB HDD.",
+      "price": 499,
+      "qty": 20,
+      "address": "Leipziger Street 30, 08060, Zwickau, Germany",
+      "ordered_date": "19/11/2023"
+    },
+    {
+      "id": 11,
+      "item": "Lenovo Notebook",
+      "description": "Good quality Lenovo notebook with 8GB RAM and 1000GB HDD.",
+      "price": 549,
+      "qty": 12,
+      "address": "Leipziger Street 30, 08060, Zwickau, Germany",
+      "ordered_date": "19/11/2023"
+    }
+  ]
+}

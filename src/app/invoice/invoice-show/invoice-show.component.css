@@ -1,0 +1,23 @@
+/* .invoice-title {grid-area: title;}
+.billing-address {grid-area: address;}
+.invoice-details {grid-area: details;} */
+
+.invoice-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.invoice-details {
+    grid-column: span;
+}
+
+@media screen and (max-width: 450px) {
+    .invoice-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+        a {
+            visibility: hidden;
+        }
+}

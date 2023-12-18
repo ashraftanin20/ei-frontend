@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center">
+            <h4>Welcome To Easy Invoice App</h4>
+        </div>
+        <div class="card-body text-center">
+            <div *ngIf="!isUserLoggedIn">
+                <h5>Please <a routerLink="login">Login</a> to access Invoice list</h5>
+                <h6>Don't have and acount? <a routerLink="/register">Register</a> your self</h6>
+            </div>
+            <div *ngIf="isUserLoggedIn">
+                <h5>You are logged in, you can go to <a routerLink="invoices">invoice page</a></h5>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
