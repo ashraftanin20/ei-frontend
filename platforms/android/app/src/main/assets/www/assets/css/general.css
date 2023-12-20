@@ -1,0 +1,18 @@
+.form-container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+@media screen and (max-width: 800px) {
+    .form-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .invoice-format {
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 450px) {
+    .invoice-format {
+        font-size: small;
+    }
+}
